@@ -1,0 +1,18 @@
+{
+    "name": "vitor-hugo-64/PHPModel",
+    "authors": [
+        {
+            "name": "PHPModel",
+            "email": "vitorhugooliveira64@gmail.com"
+        }
+    ],
+    "require": {
+    	"slim/slim":"3.0",
+    	"rain/raintpl":"3.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "PHPModel\\": "vendor\\phpmodel\\php-classes\\src"
+        }
+    }
+}
