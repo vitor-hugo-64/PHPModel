@@ -1,0 +1,64 @@
+<div class="container">
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="mt-5 mb-5 d-block text-center">
+				<h1>Usuários</h1>
+			</div>
+			{if="$status.message != null"}
+			<div class="alert alert-{$status.type}" role="alert">
+				{$status.message}
+				<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			{/if}
+			<a href="/user/insert" class="btn btn-primary mb-3">
+				<i class="fa fa-plus mr-2"></i>
+				Inserir
+			</a>
+			<a href="/" class="btn btn-warning text-white mb-3">
+				<i class="fa fa-sign-out-alt mr-2"></i>
+				Voltar
+			</a>
+
+			<div class="table-responsive-lg border rounded mb-5">
+				<table class="table table-striped">
+					<thead>
+						<tr>
+							<th scope="col">#</th>
+							<th scope="col">Primeiro nome</th>
+							<th scope="col">Sobrenome</th>
+							<th scope="col">Sexo</th>
+							<th scope="col">CPF</th>
+							<th style="width: 40px;"></th>
+							<th style="width: 40px;"></th>
+						</tr>
+					</thead>
+					<tbody>
+						{loop="$users"}
+						<tr>
+							<th scope="row">{$value.user_id}</th>
+							<td>{$value.first_name}</td>
+							<td>{$value.last_name}</td>
+							<td>{$value.sex}</td>
+							<td>{$value.cpf}</td>
+							<td class="text-right">
+								<a href="/user/update/{$value.user_id}" class="btn btn-success btn-sm">
+									<i class="fa fa-edit mr-2"></i>
+									Editar
+								</a>
+							</td>
+							<td class="text-right">
+								<a href="/user/delete/{$value.user_id}" class="btn btn-danger btn-sm">
+									<i class="fa fa-trash mr-2"></i>
+									Deletar
+								</a>
+							</td>
+						</tr>
+						{/loop}
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>

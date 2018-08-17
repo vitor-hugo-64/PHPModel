@@ -10,6 +10,7 @@ return array(
     'Psr\\Http\\Message\\' => array($vendorDir . '/psr/http-message/src'),
     'Psr\\Container\\' => array($vendorDir . '/psr/container/src'),
     'PHPModel\\' => array($vendorDir . '/phpmodel/php-classes/src'),
+    'Medoo\\' => array($vendorDir . '/catfan/medoo/src'),
     'Interop\\Container\\' => array($vendorDir . '/container-interop/container-interop/src/Interop/Container'),
     'FastRoute\\' => array($vendorDir . '/nikic/fast-route/src'),
 );

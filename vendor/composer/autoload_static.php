@@ -21,6 +21,10 @@ class ComposerStaticInit95735d8eb3c616ca77bb928e18ac9c9c
             'Psr\\Container\\' => 14,
             'PHPModel\\' => 9,
         ),
+        'M' => 
+        array (
+            'Medoo\\' => 6,
+        ),
         'I' => 
         array (
             'Interop\\Container\\' => 18,
@@ -47,6 +51,10 @@ class ComposerStaticInit95735d8eb3c616ca77bb928e18ac9c9c
         'PHPModel\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpmodel/php-classes/src',
+        ),
+        'Medoo\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/catfan/medoo/src',
         ),
         'Interop\\Container\\' => 
         array (
