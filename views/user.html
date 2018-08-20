@@ -6,6 +6,11 @@
 			</div>
 			{if="$status.message != null"}
 			<div class="alert alert-{$status.type}" role="alert">
+				{if="$status.type == 'success'"}
+				<i class="fa fa-check-circle mr-2"></i>
+				{else}
+				<i class="fa fa-exclamation-circle mr-2"></i>
+				{/if}
 				{$status.message}
 				<button type="button" class="close" data-dismiss="alert" aria-label="Close">
 					<span aria-hidden="true">&times;</span>

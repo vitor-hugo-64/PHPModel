@@ -20,6 +20,7 @@ class ComposerStaticInit95735d8eb3c616ca77bb928e18ac9c9c
             'Psr\\Http\\Message\\' => 17,
             'Psr\\Container\\' => 14,
             'PHPModel\\' => 9,
+            'PHPMailer\\PHPMailer\\' => 20,
         ),
         'M' => 
         array (
@@ -51,6 +52,10 @@ class ComposerStaticInit95735d8eb3c616ca77bb928e18ac9c9c
         'PHPModel\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpmodel/php-classes/src',
+        ),
+        'PHPMailer\\PHPMailer\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/phpmailer/phpmailer/src',
         ),
         'Medoo\\' => 
         array (
