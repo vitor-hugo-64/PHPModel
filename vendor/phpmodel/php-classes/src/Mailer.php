@@ -22,10 +22,18 @@ class Mailer
 		$this->mail->Host = 'smtp.gmail.com';
 		$this->mail->SMTPAuth = true;
 		$this->mail->Username = 'vitorhugooliveira64@gmail.com';
-		$this->mail->Password = '915157096141270vho';
+		$this->mail->Password = 'SENHA';
 		$this->mail->SMTPSecure = 'tls';
 		$this->mail->Port = 587;
 		$this->mail->CharSet = 'utf-8';
+
+		$this->mail->SMTPOptions = array(
+			'ssl' => array(
+				'verify_peer' => false,
+				'verify_peer_name' => false,
+				'allow_self_signed' => true
+			)
+		);
 
 		$this->mail->setFrom( $senderEmail, $senderName);
 	}

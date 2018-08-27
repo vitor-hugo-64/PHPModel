@@ -19,5 +19,6 @@ $app->get( '/', function ()
 
 require_once('user.php');
 require_once('email.php');
+require_once('courier.php');
 
 $app->run();
