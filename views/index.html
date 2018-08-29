@@ -30,5 +30,15 @@
 				</div>
 			</div>
 		</div>
+		<div class="col mt-5">
+			<div class="card">
+				<img class="card-img-top" src="../res/img/courier-picture.png" alt="Card image cap">
+				<div class="card-body">
+					<h5 class="card-title">CEP</h5>
+					<p class="card-text">Verificando localidade através do VIACEP.</p>
+					<a href="/cep" class="btn btn-primary">Entrar</a>
+				</div>
+			</div>
+		</div>		
 	</div>
 </div>
